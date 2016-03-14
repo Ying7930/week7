@@ -4,9 +4,11 @@ class Ball {
   float radius;
   float xSpeed;
   float ySpeed;
+  //value of color
   float r;
   float b;
   float g;
+  //for rectangles
   float j;
   float z;
   
@@ -52,9 +54,9 @@ void setup() {
     b[i].xSpeed = random(-3, 3);
     b[i].ySpeed = random(-3, 3);
     
-    b[i].r = random(255);
-    b[i].b = random(255);
-    b[i].g = random(255);
+    b[i].r = random(0, 255);
+    b[i].b = random(0, 255);
+    b[i].g = random(0, 255);//to make sure each ball will only got one color
     
     b[i].j = random(500);
     b[i].z = random(200);

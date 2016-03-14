@@ -7,7 +7,9 @@ class Ball {
   float r;
   float b;
   float g;
-
+  float j;
+  float z;
+  
   void move() {
     x = x + xSpeed;
     y = y + ySpeed;
@@ -16,6 +18,9 @@ class Ball {
 
   void display() {
     noStroke();
+    fill(r*5, b*3, g*2, 26);
+    rect(y, j, j/3, j/3); //bubble rect
+
     fill(r, b, g);
     ellipse(x, y, radius*2, radius*2);
   }
@@ -50,6 +55,9 @@ void setup() {
     b[i].r = random(255);
     b[i].b = random(255);
     b[i].g = random(255);
+    
+    b[i].j = random(500);
+    b[i].z = random(200);
   }
 }
 

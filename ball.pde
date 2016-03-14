@@ -19,7 +19,7 @@ class Ball {
   void display() {
     noStroke();
     fill(r*5, b*3, g*2, 26);
-    rect(y, j, j/3, j/3); //bubble rect
+    rect(y, j, z/3, z/3); // bubble rect
 
     fill(r, b, g);
     ellipse(x, y, radius*2, radius*2);
